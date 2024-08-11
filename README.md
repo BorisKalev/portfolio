@@ -19,4 +19,17 @@ Check out the live version of my portfolio at [boriskalev.com](https://boriskale
 - **React**: A JavaScript library for building user interfaces.
 - **Tailwind CSS**: A utility-first CSS framework for rapid UI development.
 - **i18next**: Internationalization framework for managing multiple languages.
-- **Firebase**: Hosting and deployment platform for the live site.
+
+
+**📞 Contact**
+
+Feel free to reach out if you have any questions or just want to connect:
+
+- **Email**: boriskalev@example.com
+- **LinkedIn**: [linkedin.com/in/boriskalev](https://linkedin.com/in/boriskalev)
+- **GitHub**: [github.com/boriskalev](https://github.com/boriskalev)
+
+
+
+
+
