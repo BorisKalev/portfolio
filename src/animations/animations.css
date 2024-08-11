@@ -1,0 +1,172 @@
+@keyframes wave {
+    0% {
+      transform: rotate(0deg);
+    }
+    25% {
+      transform: rotate(10deg);
+    }
+    50% {
+      transform: rotate(0deg);
+    }
+    75% {
+      transform: rotate(-10deg);
+    }
+    100% {
+      transform: rotate(0deg);
+    }
+  }
+  
+  .emoji-shake {
+    display: inline-block;
+  }
+  
+  .emoji-shake:hover {
+    animation: wave 0.5s ease-in-out infinite;
+  }
+  
+  .emoji-shake-load {
+    animation: wave 0.5s ease-in-out 3;
+  }
+
+ .text{
+   font-size: 40px;
+   font-weight: 300;
+ }
+
+ @media screen and (max-width: 600px){
+    .text{
+      font-size: 30px;
+    }
+ }
+
+
+ .emoji-hover-animation-left,
+ .emoji-hover-animation-right {
+   transition: none;
+ }
+ 
+ .animate-left {
+    animation: moveLeft 1s infinite;
+ }
+ 
+ .animate-right {
+    animation: moveRight 1s infinite;
+ }
+ 
+ @keyframes moveLeft {
+    0% {
+      transform: translateX(0);
+    }
+    50% {
+      transform: translateX(5px);
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
+  
+  @keyframes moveRight {
+    0% {
+      transform: translateX(0);
+    }
+    50% {
+      transform: translateX(-5px);
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
+
+  .gradient{
+    background: var(--footer-gradient);
+  }
+ 
+
+  .hover-effect-8 {
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+    padding: 0.5rem 0.75rem;
+  }
+  
+  .hover-effect-8 span::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 0%;
+    width: 2px;
+    background-color: #3658c1;
+    transition: height 0.5s ease-in-out;
+  }
+  .hover-effect-8 span::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 0%;
+    width: 2px;
+    background-color: #3658c1;
+    transition: height 0.5s ease-in-out;
+  }
+  
+  .hover-effect-8::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 2px;
+    width: 100%;
+    background-color: #3658c1;
+    transform: translateX(-105%);
+    transition: transform 0.5s ease-in-out;
+  }
+  
+  .hover-effect-8::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 2px;
+    width: 100%;
+    background-color: #3658c1;
+    transform: translateX(105%);
+    transition: transform 0.5s ease-in-out;
+  }
+  
+  .hover-effect-8:hover::after,
+  .hover-effect-8:hover::before {
+    transform: translateX(0);
+  }
+  
+  .hover-effect-8:hover span::before,
+  .hover-effect-8:hover span::after {
+    height: 100%;
+  }
+
+
+  .animation-up:hover{
+    animation: moveUp 1s infinite;
+  }
+
+  @keyframes moveUp {
+    0% {
+      transform: translateY(-5px);
+    }
+    50%{
+      transform: translateY(0px);
+    }
+    100%{
+      transform: translateY(-5px);
+    }
+  }
+
+
+  @media screen and (max-width: 680px){
+      .marginLeft{
+        margin-left: 2rem !important;
+      }
+      .marginTop{
+        margin-top: 5rem !important;
+      }
+  }
